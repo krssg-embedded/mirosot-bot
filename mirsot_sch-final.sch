@@ -13404,7 +13404,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <attribute name="VALUE" x="260.985" y="136.525" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="JP3" gate="A" x="99.06" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.345" y="39.37" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="106.68" y="39.37" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP4" gate="A" x="35.56" y="12.7" smashed="yes">
@@ -13571,6 +13570,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <wire x1="55.88" y1="15.24" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="SUPPLY24" gate="GND" pin="GND"/>
+<wire x1="156.718" y1="-3.81" x2="156.718" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BIN2" class="0">
 <segment>
@@ -13626,14 +13630,14 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </net>
 <net name="ENB" class="0">
 <segment>
-<wire x1="218.44" y1="-43.18" x2="222.25" y2="-43.18" width="0.1524" layer="91"/>
-<label x="222.25" y="-43.18" size="0.8128" layer="95" rot="MR180" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(INT1)PD3"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="A" pin="1"/>
 <wire x1="33.02" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
 <label x="25.4" y="20.32" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="(SCL)PC0"/>
+<wire x1="218.44" y1="-27.94" x2="220.98" y2="-27.94" width="0.1524" layer="91"/>
+<label x="220.98" y="-27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -13721,9 +13725,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="83.82" y="2.54" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="-22.86" x2="218.44" y2="-22.86" width="0.1524" layer="91"/>
-<label x="220.98" y="-22.86" size="0.8128" layer="95" rot="MR180" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(TCK)PC2"/>
+<pinref part="IC2" gate="G$1" pin="(TMS)PC3"/>
+<wire x1="218.44" y1="-20.32" x2="220.98" y2="-20.32" width="0.1524" layer="91"/>
+<label x="220.98" y="-20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ENCD_MB_1" class="0">
@@ -13733,9 +13737,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="83.82" y="-15.24" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="218.44" y1="-17.78" x2="220.98" y2="-17.78" width="0.1524" layer="91"/>
-<label x="220.98" y="-17.78" size="0.8128" layer="95" rot="MR180" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(TDO)PC4"/>
+<pinref part="IC2" gate="G$1" pin="(SDA)PC1"/>
+<wire x1="218.44" y1="-25.4" x2="220.98" y2="-25.4" width="0.1524" layer="91"/>
+<label x="220.98" y="-25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ENCD_MA_2" class="0">
@@ -13746,9 +13750,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="109.22" y="2.54" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="-20.32" x2="218.44" y2="-20.32" width="0.1524" layer="91"/>
-<label x="220.98" y="-20.32" size="0.8128" layer="95" rot="MR180" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(TMS)PC3"/>
+<pinref part="IC2" gate="G$1" pin="(TCK)PC2"/>
+<wire x1="218.44" y1="-22.86" x2="220.98" y2="-22.86" width="0.1524" layer="91"/>
+<label x="220.98" y="-22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ENCD_MB_2" class="0">
@@ -13759,9 +13763,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="109.22" y="-15.24" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="-15.24" x2="218.44" y2="-15.24" width="0.1524" layer="91"/>
-<label x="220.98" y="-15.24" size="0.8128" layer="95" rot="MR180" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(TDI)PC5"/>
+<pinref part="IC2" gate="G$1" pin="(TDO)PC4"/>
+<wire x1="218.44" y1="-17.78" x2="220.98" y2="-17.78" width="0.1524" layer="91"/>
+<label x="220.98" y="-17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CSN" class="0">
@@ -13989,9 +13993,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="142.24" y="137.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="218.44" y1="-5.08" x2="220.98" y2="-5.08" width="0.1524" layer="91"/>
-<label x="220.98" y="-5.08" size="0.8128" layer="95" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(T0/XCK)PB0"/>
+<pinref part="IC2" gate="G$1" pin="(ICP)PD6"/>
+<wire x1="218.44" y1="-35.56" x2="220.98" y2="-35.56" width="0.1524" layer="91"/>
+<label x="220.98" y="-35.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED_2" class="0">
@@ -14001,9 +14005,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="152.4" y="137.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="218.44" y1="-2.54" x2="220.98" y2="-2.54" width="0.1524" layer="91"/>
-<label x="220.98" y="-2.54" size="0.8128" layer="95" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(T1)PB1"/>
+<pinref part="IC2" gate="G$1" pin="(INT1)PD3"/>
+<wire x1="218.44" y1="-43.18" x2="220.98" y2="-43.18" width="0.1524" layer="91"/>
+<label x="220.98" y="-43.18" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14148,9 +14152,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="162.56" y="137.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="218.44" y1="5.08" x2="220.98" y2="5.08" width="0.1524" layer="91"/>
-<label x="220.98" y="5.08" size="0.8128" layer="95" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="(SS)PB4"/>
+<pinref part="IC2" gate="G$1" pin="(INT0)PD2"/>
+<wire x1="218.44" y1="-45.72" x2="220.98" y2="-45.72" width="0.1524" layer="91"/>
+<label x="220.98" y="-45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -14184,13 +14188,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="158.75" y1="21.59" x2="160.02" y2="21.59" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND1" class="0">
-<segment>
-<wire x1="156.718" y1="-3.81" x2="156.718" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<pinref part="SUPPLY24" gate="GND" pin="GND"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -14202,9 +14199,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,148.59,43.18,U2,XTAL1,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
