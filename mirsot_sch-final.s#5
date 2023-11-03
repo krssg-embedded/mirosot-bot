@@ -13057,10 +13057,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="power" width="1.27" drill="0.75">
-</class>
-<class number="2" name="signal" width="0.508" drill="0.00635">
-</class>
 </classes>
 <parts>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206K" package3d_urn="urn:adsk.eagle:package:23682/2" value="100n"/>
@@ -13435,7 +13431,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <busses>
 </busses>
 <nets>
-<net name="VCC_REF" class="2">
+<net name="VCC_REF" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -13448,7 +13444,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="IC2" gate="G$1" pin="(ADC0)PA0"/>
 </segment>
 </net>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
@@ -13547,6 +13543,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <junction x="149.86" y="50.8"/>
 </segment>
 <segment>
+<pinref part="SUPPLY23" gate="GND" pin="GND"/>
+<wire x1="157.226" y1="25.4" x2="158.75" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="177.8" y1="5.08" x2="175.26" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
@@ -13575,17 +13575,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="SUPPLY24" gate="GND" pin="GND"/>
 <wire x1="156.718" y1="-3.81" x2="156.718" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="SUPPLY23" gate="GND" pin="GND"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="157.226" y1="25.4" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="25.4" x2="160.02" y2="21.59" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="29.21" x2="160.02" y2="25.4" width="0.1524" layer="91"/>
-<junction x="160.02" y="25.4"/>
-</segment>
 </net>
-<net name="BIN2" class="2">
+<net name="BIN2" class="0">
 <segment>
 <wire x1="218.44" y1="-33.02" x2="222.25" y2="-33.02" width="0.1524" layer="91"/>
 <label x="222.25" y="-33.02" size="0.8128" layer="95" rot="MR180" xref="yes"/>
@@ -13598,7 +13589,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="45.72" y="25.4" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="BIN1" class="2">
+<net name="BIN1" class="0">
 <segment>
 <wire x1="218.44" y1="-38.1" x2="222.25" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="(OC1A)PD5"/>
@@ -13611,7 +13602,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="43.18" y="25.4" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="AIN2" class="2">
+<net name="AIN2" class="0">
 <segment>
 <wire x1="218.44" y1="-40.64" x2="222.25" y2="-40.64" width="0.1524" layer="91"/>
 <label x="222.25" y="-40.64" size="0.8128" layer="95" rot="MR180" xref="yes"/>
@@ -13624,7 +13615,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="43.18" y="0" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="AIN1" class="2">
+<net name="AIN1" class="0">
 <segment>
 <wire x1="218.44" y1="2.54" x2="220.98" y2="2.54" width="0.1524" layer="91"/>
 <label x="220.98" y="2.54" size="0.8128" layer="95" xref="yes"/>
@@ -13637,7 +13628,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="45.72" y="0" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="ENB" class="2">
+<net name="ENB" class="0">
 <segment>
 <pinref part="JP4" gate="A" pin="1"/>
 <wire x1="33.02" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
@@ -13649,14 +13640,32 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="2">
+<net name="N$2" class="0">
 <segment>
 <pinref part="BATT" gate="G$1" pin="A"/>
 <wire x1="30.48" y1="93.98" x2="30.48" y2="90.17" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOSI" class="2">
+<net name="RST" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="35.56" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="35.56" x2="133.35" y2="35.56" width="0.1524" layer="91"/>
+<junction x="137.16" y="35.56"/>
+<label x="133.35" y="35.56" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="S2" gate="1" pin="P1"/>
+<pinref part="S2" gate="1" pin="P"/>
+<wire x1="152.4" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="40.64" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+<junction x="149.86" y="40.64"/>
+<wire x1="179.07" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="RESET"/>
+<wire x1="149.86" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="96.52" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
@@ -13673,7 +13682,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="266.7" y="121.92" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MISO" class="2">
+<net name="MISO" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="88.9" y1="22.86" x2="85.09" y2="22.86" width="0.1524" layer="91"/>
@@ -13692,7 +13701,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="266.7" y="119.38" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SCK" class="2">
+<net name="SCK" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="88.9" y1="20.32" x2="78.74" y2="20.32" width="0.1524" layer="91"/>
@@ -13709,7 +13718,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="266.7" y="124.46" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="ENCD_MA_1" class="2">
+<net name="ENCD_MA_1" class="0">
 <segment>
 <pinref part="SV1" gate="A" pin="6"/>
 <wire x1="91.44" y1="0" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
@@ -13721,7 +13730,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ENCD_MB_1" class="2">
+<net name="ENCD_MB_1" class="0">
 <segment>
 <pinref part="SV2" gate="A" pin="6"/>
 <wire x1="91.44" y1="-17.78" x2="83.82" y2="-15.24" width="0.1524" layer="91"/>
@@ -13733,7 +13742,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ENCD_MA_2" class="2">
+<net name="ENCD_MA_2" class="0">
 <segment>
 <pinref part="SV1" gate="A" pin="5"/>
 <wire x1="99.06" y1="0" x2="104.14" y2="2.54" width="0.1524" layer="91"/>
@@ -13746,7 +13755,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ENCD_MB_2" class="2">
+<net name="ENCD_MB_2" class="0">
 <segment>
 <pinref part="SV2" gate="A" pin="5"/>
 <wire x1="99.06" y1="-17.78" x2="104.14" y2="-15.24" width="0.1524" layer="91"/>
@@ -13759,28 +13768,28 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="CSN" class="2">
+<net name="CSN" class="0">
+<segment>
+<wire x1="220.98" y1="-10.16" x2="218.44" y2="-10.16" width="0.1524" layer="91"/>
+<label x="220.98" y="-10.16" size="0.8128" layer="95" rot="MR180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="(TOSC2)PC7"/>
+</segment>
 <segment>
 <pinref part="M1" gate="G$1" pin="CSN"/>
 <wire x1="271.78" y1="127" x2="266.7" y2="127" width="0.1524" layer="91"/>
 <label x="266.7" y="127" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="(TOSC1)PC6"/>
-<wire x1="218.44" y1="-12.7" x2="220.98" y2="-12.7" width="0.1524" layer="91"/>
-<label x="220.98" y="-12.7" size="0.8128" layer="95" xref="yes"/>
-</segment>
 </net>
-<net name="CE" class="2">
+<net name="CE" class="0">
+<segment>
+<wire x1="220.98" y1="-12.7" x2="218.44" y2="-12.7" width="0.1524" layer="91"/>
+<label x="220.98" y="-12.7" size="0.8128" layer="95" rot="MR180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="(TOSC1)PC6"/>
+</segment>
 <segment>
 <pinref part="M1" gate="G$1" pin="CE"/>
 <wire x1="271.78" y1="129.54" x2="266.7" y2="129.54" width="0.1524" layer="91"/>
 <label x="266.7" y="129.54" size="0.8128" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="(TOSC2)PC7"/>
-<wire x1="218.44" y1="-10.16" x2="220.98" y2="-10.16" width="0.1524" layer="91"/>
-<label x="220.98" y="-10.16" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AOUT+" class="0">
@@ -13809,7 +13818,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="25.4" y="15.24" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BOUT+" class="1">
+<net name="BOUT+" class="0">
 <segment>
 <pinref part="SV2" gate="A" pin="2"/>
 <wire x1="91.44" y1="-22.86" x2="88.9" y2="-25.4" width="0.1524" layer="91"/>
@@ -13822,7 +13831,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="25.4" y="12.7" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BOUT-" class="1">
+<net name="BOUT-" class="0">
 <segment>
 <pinref part="SV2" gate="A" pin="1"/>
 <wire x1="99.06" y1="-22.86" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
@@ -13835,21 +13844,21 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="25.4" y="10.16" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$5" class="2">
+<net name="N$5" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="5VLD" gate="G$1" pin="A"/>
 <wire x1="45.72" y1="93.98" x2="45.72" y2="90.17" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="2">
+<net name="N$6" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="3V3LD" gate="G$1" pin="A"/>
 <wire x1="55.88" y1="93.98" x2="55.88" y2="90.17" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="1">
+<net name="+5V" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
@@ -13914,7 +13923,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="25.4" y1="-5.08" x2="25.4" y2="-3.81" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="1">
+<net name="+3V3" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="107.95" x2="55.88" y2="107.442" width="0.1524" layer="91"/>
@@ -13942,7 +13951,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <junction x="254" y="132.08"/>
 </segment>
 </net>
-<net name="+5V_PROG" class="1">
+<net name="+5V_PROG" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="96.52" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
@@ -13961,7 +13970,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="13.97" y="97.028" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="+5V_SUPPLY" class="1">
+<net name="+5V_SUPPLY" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="96.52" x2="106.68" y2="91.44" width="0.1524" layer="91"/>
@@ -13977,7 +13986,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="38.1" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="LED_1" class="2">
+<net name="LED_1" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="134.62" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
@@ -13989,7 +13998,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-35.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LED_2" class="2">
+<net name="LED_2" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="134.62" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
@@ -14001,28 +14010,28 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-43.18" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="2">
+<net name="N$3" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="LD1" gate="G$1" pin="A"/>
 <wire x1="142.24" y1="124.46" x2="142.24" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="2">
+<net name="N$4" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="LD2" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="124.46" x2="152.4" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="2">
+<net name="N$9" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="LD3" gate="G$1" pin="A"/>
 <wire x1="162.56" y1="124.46" x2="162.56" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="1">
+<net name="VCC" class="0">
 <segment>
 <wire x1="80.01" y1="142.24" x2="87.63" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="144.78" x2="87.63" y2="142.24" width="0.1524" layer="91"/>
@@ -14062,7 +14071,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="53.34" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="IRQ" class="2">
+<net name="IRQ" class="0">
 <segment>
 <wire x1="218.44" y1="0" x2="220.98" y2="0" width="0.1524" layer="91"/>
 <label x="220.98" y="0" size="0.8128" layer="95" xref="yes"/>
@@ -14074,21 +14083,21 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="266.7" y="116.84" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$10" class="2">
+<net name="N$10" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="RX" gate="G$1" pin="A"/>
 <wire x1="210.82" y1="93.98" x2="210.82" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="2">
+<net name="N$11" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="TX" gate="G$1" pin="A"/>
 <wire x1="223.52" y1="93.98" x2="223.52" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TX" class="2">
+<net name="TX" class="0">
 <segment>
 <pinref part="TX" gate="G$1" pin="C"/>
 <wire x1="223.52" y1="85.09" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
@@ -14105,7 +14114,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="IC2" gate="G$1" pin="(TXD)PD1"/>
 </segment>
 </net>
-<net name="RX" class="2">
+<net name="RX" class="0">
 <segment>
 <pinref part="RX" gate="G$1" pin="C"/>
 <wire x1="210.82" y1="85.09" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
@@ -14122,7 +14131,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="IC2" gate="G$1" pin="(RXD)PD0"/>
 </segment>
 </net>
-<net name="RESET" class="2">
+<net name="RESET" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
 <wire x1="88.9" y1="17.78" x2="85.09" y2="17.78" width="0.1524" layer="91"/>
@@ -14135,24 +14144,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="99.06" y1="43.18" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
 <label x="99.06" y="38.1" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="35.56" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="35.56" x2="133.35" y2="35.56" width="0.1524" layer="91"/>
-<junction x="137.16" y="35.56"/>
-<label x="133.35" y="35.56" size="0.8128" layer="95" rot="R180" xref="yes"/>
-<pinref part="S2" gate="1" pin="P1"/>
-<pinref part="S2" gate="1" pin="P"/>
-<wire x1="152.4" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="40.64" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
-<junction x="149.86" y="40.64"/>
-<wire x1="179.07" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="RESET"/>
-<wire x1="149.86" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
-</segment>
 </net>
-<net name="LED_3" class="2">
+<net name="LED_3" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="134.62" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
@@ -14164,7 +14157,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="220.98" y="-45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$12" class="2">
+<net name="N$12" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="2"/>
 <pinref part="IC2" gate="G$1" pin="XTAL2"/>
@@ -14175,7 +14168,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <junction x="172.72" y="27.94"/>
 </segment>
 </net>
-<net name="N$13" class="2">
+<net name="N$13" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="G$1" pin="XTAL1"/>
@@ -14186,7 +14179,16 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <junction x="172.72" y="22.86"/>
 </segment>
 </net>
-<net name="N$1" class="2">
+<net name="N$14" class="0">
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="29.21" x2="158.75" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="29.21" x2="158.75" y2="21.59" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="158.75" y1="21.59" x2="160.02" y2="21.59" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="JP4" gate="A" pin="6"/>

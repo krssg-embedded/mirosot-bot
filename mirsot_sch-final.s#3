@@ -13951,14 +13951,14 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="106.68" y="25.4" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="45.72" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
-<label x="38.1" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="13.97" y1="92.71" x2="13.97" y2="96.774" width="0.1524" layer="91"/>
 <label x="13.97" y="97.028" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="45.72" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<label x="38.1" y="-17.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="+5V_SUPPLY" class="1">
@@ -13972,9 +13972,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="109.22" y="96.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="45.72" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
-<label x="38.1" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="45.72" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
+<label x="38.1" y="-22.86" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_1" class="2">
