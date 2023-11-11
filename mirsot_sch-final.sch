@@ -12749,77 +12749,118 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </deviceset>
 </devicesets>
 </library>
-<library name="XT60-M">
+<library name="con-T-plug">
 <packages>
-<package name="AMASS_XT60-M">
-<wire x1="-7.75" y1="4.05" x2="4.95" y2="4.05" width="0.127" layer="51"/>
-<wire x1="7.75" y1="1.6" x2="7.75" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="4.95" y1="-4.05" x2="-7.75" y2="-4.05" width="0.127" layer="51"/>
-<wire x1="-7.75" y1="-4.05" x2="-7.75" y2="4.05" width="0.127" layer="51"/>
-<wire x1="7.75" y1="-1.6" x2="4.95" y2="-4.05" width="0.127" layer="51"/>
-<wire x1="4.95" y1="4.05" x2="7.75" y2="1.6" width="0.127" layer="51"/>
-<wire x1="-7.75" y1="4.05" x2="4.95" y2="4.05" width="0.127" layer="21"/>
-<wire x1="7.75" y1="1.6" x2="7.75" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="4.95" y1="-4.05" x2="-7.75" y2="-4.05" width="0.127" layer="21"/>
-<wire x1="-7.75" y1="-4.05" x2="-7.75" y2="4.05" width="0.127" layer="21"/>
-<wire x1="-8" y1="4.3" x2="-8" y2="-4.3" width="0.05" layer="39"/>
-<wire x1="-8" y1="-4.3" x2="8" y2="-4.3" width="0.05" layer="39"/>
-<wire x1="8" y1="-4.3" x2="8" y2="4.3" width="0.05" layer="39"/>
-<wire x1="8" y1="4.3" x2="-8" y2="4.3" width="0.05" layer="39"/>
-<text x="-8" y="5.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8" y="-5.3" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<wire x1="-9.5" y1="0" x2="-8.5" y2="0" width="0.127" layer="21"/>
-<wire x1="-9" y1="0.5" x2="-9" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="8.5" y1="0" x2="9.5" y2="0" width="0.127" layer="51"/>
-<wire x1="4.95" y1="4.05" x2="7.75" y2="1.6" width="0.127" layer="21"/>
-<wire x1="7.75" y1="-1.6" x2="4.95" y2="-4.05" width="0.127" layer="21"/>
-<wire x1="-9.5" y1="0" x2="-8.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-9" y1="0.5" x2="-9" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="8.5" y1="0" x2="9.5" y2="0" width="0.127" layer="21"/>
-<pad name="P" x="-3.6" y="0" drill="4.55" diameter="6" shape="square"/>
-<pad name="N" x="3.6" y="0" drill="4.55" diameter="6"/>
+<package name="T_PLUG_CONNECTOR_H">
+<wire x1="-10.16" y1="7.493" x2="-10.16" y2="0" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="-6.477" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-6.477" x2="3.937" y2="-6.477" width="0.127" layer="21"/>
+<wire x1="3.937" y1="-6.477" x2="10.16" y2="-6.477" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="7.493" x2="3.937" y2="7.493" width="0.127" layer="21"/>
+<wire x1="3.937" y1="7.493" x2="10.16" y2="7.493" width="0.127" layer="21"/>
+<wire x1="10.16" y1="7.493" x2="10.16" y2="0" width="0.127" layer="21"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-6.477" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="0" x2="10.16" y2="0" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-3.175" x2="-5.08" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-1.905" x2="-6.35" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
+<wire x1="3.937" y1="-6.477" x2="3.937" y2="7.493" width="0.127" layer="21"/>
+<smd name="P$1" x="6.35" y="3.81" dx="5.08" dy="2.54" layer="1" roundness="10" rot="R90"/>
+<smd name="P$2" x="6.096" y="-3.175" dx="3.81" dy="1.9304" layer="1" roundness="10" rot="R90"/>
+<polygon width="0" layer="1">
+<vertex x="4.445" y="-0.508"/>
+<vertex x="9.652" y="-0.508"/>
+<vertex x="9.652" y="-5.969"/>
+<vertex x="4.445" y="-5.969"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="4.445" y="0.508"/>
+<vertex x="9.652" y="0.508"/>
+<vertex x="9.652" y="6.985"/>
+<vertex x="4.445" y="6.985"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="4.445" y="0.508"/>
+<vertex x="9.652" y="0.508"/>
+<vertex x="9.652" y="6.985"/>
+<vertex x="4.445" y="6.985"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="4.445" y="0.508"/>
+<vertex x="9.652" y="0.508"/>
+<vertex x="9.652" y="6.985"/>
+<vertex x="4.445" y="6.985"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="4.445" y="-0.508"/>
+<vertex x="4.445" y="-5.969"/>
+<vertex x="9.652" y="-5.969"/>
+<vertex x="9.652" y="-0.508"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="4.445" y="-0.508"/>
+<vertex x="4.445" y="-5.969"/>
+<vertex x="9.652" y="-5.969"/>
+<vertex x="9.652" y="-0.508"/>
+</polygon>
 </package>
 </packages>
 <symbols>
-<symbol name="XT60-M">
-<wire x1="0" y1="3.81" x2="1.27" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="1.27" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="2.54" x2="1.905" y2="2.54" width="0.254" layer="94"/>
-<rectangle x1="0.635" y1="2.2225" x2="2.2225" y2="2.8575" layer="94"/>
-<wire x1="0" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<rectangle x1="0.635" y1="-0.3175" x2="2.2225" y2="0.3175" layer="94"/>
-<pin name="POS" x="-5.08" y="2.54" length="middle" direction="pas"/>
-<pin name="NEG" x="-5.08" y="0" length="middle" direction="pas"/>
+<symbol name="T_PLUG_CONNECTOR_H">
+<wire x1="0.5" y1="0" x2="5.5" y2="0" width="0.127" layer="94"/>
+<wire x1="13.5" y1="1.5" x2="13.5" y2="6" width="0.127" layer="94"/>
+<wire x1="5.5" y1="7.5" x2="0.5" y2="7.5" width="0.127" layer="94"/>
+<wire x1="0" y1="7" x2="0" y2="0.5" width="0.127" layer="94"/>
+<wire x1="6.5" y1="6.5" x2="13" y2="6.5" width="0.127" layer="94"/>
+<wire x1="6.5" y1="1" x2="13" y2="1" width="0.127" layer="94"/>
+<wire x1="5.5" y1="0" x2="6.5" y2="1" width="0.127" layer="94"/>
+<wire x1="5.5" y1="7.5" x2="6.5" y2="6.5" width="0.127" layer="94"/>
+<wire x1="13" y1="1" x2="13.5" y2="1.5" width="0.127" layer="94"/>
+<wire x1="13" y1="6.5" x2="13.5" y2="6" width="0.127" layer="94"/>
+<wire x1="0.5" y1="7.5" x2="0" y2="7" width="0.127" layer="94"/>
+<wire x1="0" y1="0.5" x2="0.5" y2="0" width="0.127" layer="94"/>
+<wire x1="6.1" y1="1.75" x2="9.9" y2="1.75" width="0.127" layer="91"/>
+<wire x1="10" y1="4.5" x2="10" y2="3.5" width="0.127" layer="91"/>
+<wire x1="6" y1="4.5" x2="6" y2="3.5" width="0.127" layer="91"/>
+<wire x1="6" y1="4.5" x2="10" y2="4.5" width="0.127" layer="91"/>
+<wire x1="2" y1="5.75" x2="3" y2="5.75" width="0.127" layer="94"/>
+<wire x1="3" y1="1.75" x2="2" y2="1.75" width="0.127" layer="94"/>
+<wire x1="2" y1="1.75" x2="2" y2="5.75" width="0.127" layer="94"/>
+<wire x1="6" y1="4.5" x2="10" y2="4.5" width="0.127" layer="94"/>
+<wire x1="10" y1="4.5" x2="10" y2="3.5" width="0.127" layer="94"/>
+<wire x1="6" y1="3.5" x2="6" y2="4.5" width="0.127" layer="94"/>
+<wire x1="3" y1="5.75" x2="3.1" y2="5.65" width="0.127" layer="91"/>
+<wire x1="3.1" y1="5.65" x2="4.6" y2="5.65" width="0.127" layer="91"/>
+<wire x1="4.6" y1="5.65" x2="4.6" y2="1.85" width="0.127" layer="91"/>
+<wire x1="4.6" y1="1.85" x2="3.1" y2="1.85" width="0.127" layer="91"/>
+<wire x1="3.1" y1="1.85" x2="3" y2="1.75" width="0.127" layer="91"/>
+<wire x1="6" y1="3.5" x2="6.1" y2="3.4" width="0.127" layer="91"/>
+<wire x1="6.1" y1="3.4" x2="6.1" y2="1.75" width="0.127" layer="91"/>
+<wire x1="10" y1="3.5" x2="9.9" y2="3.4" width="0.127" layer="91"/>
+<wire x1="9.9" y1="3.4" x2="9.9" y2="1.75" width="0.127" layer="91"/>
+<wire x1="3" y1="5.75" x2="2" y2="5.75" width="0.127" layer="91"/>
+<wire x1="2" y1="5.75" x2="2" y2="1.75" width="0.127" layer="91"/>
+<wire x1="2" y1="1.75" x2="3" y2="1.75" width="0.127" layer="91"/>
+<wire x1="0.5" y1="3.5" x2="1.5" y2="3.5" width="0.254" layer="94"/>
+<wire x1="1" y1="4" x2="1" y2="3" width="0.254" layer="94"/>
+<wire x1="10.5" y1="2.5" x2="11.5" y2="2.5" width="0.254" layer="94"/>
+<pin name="P-1" x="2.54" y="-2.54" length="middle" direction="pas" rot="R90"/>
+<pin name="P-2" x="7.62" y="-2.54" length="middle" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="XT60-M" prefix="J">
-<description> &lt;a href="https://pricing.snapeda.com/parts/XT60-M/AMASS/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<deviceset name="T_PLUG_CONNECTOR_H">
 <gates>
-<gate name="G$1" symbol="XT60-M" x="0" y="0"/>
+<gate name="G$1" symbol="T_PLUG_CONNECTOR_H" x="-15.24" y="5.08"/>
 </gates>
 <devices>
-<device name="" package="AMASS_XT60-M">
+<device name="" package="T_PLUG_CONNECTOR_H">
 <connects>
-<connect gate="G$1" pin="NEG" pad="N"/>
-<connect gate="G$1" pin="POS" pad="P"/>
+<connect gate="G$1" pin="P-1" pad="P$2"/>
+<connect gate="G$1" pin="P-2" pad="P$1"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Not in stock"/>
-<attribute name="DESCRIPTION" value=" Plug; DC supply; XT60; male; PIN: 2; for cable; soldered; 30A; 500V "/>
-<attribute name="MF" value="AMASS"/>
-<attribute name="MP" value="XT60-M"/>
-<attribute name="PACKAGE" value="Package "/>
-<attribute name="PRICE" value="None"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -12847,7 +12888,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
-<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="T" package3d_urn="urn:adsk.eagle:package:16414/1" technology="05" value="7805T"/>
+<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="DT" package3d_urn="urn:adsk.eagle:package:16415/2" technology="05" value="7805DT"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2" value="330"/>
 <part name="5VLD" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1" value="RED"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -12917,7 +12958,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2" value="43k"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="J1" library="XT60-M" deviceset="XT60-M" device=""/>
+<part name="U$1" library="con-T-plug" deviceset="T_PLUG_CONNECTOR_H" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13195,10 +13236,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <instance part="P+9" gate="1" x="25.4" y="-7.62" smashed="yes" rot="R180">
 <attribute name="VALUE" x="26.67" y="-5.08" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="J1" gate="G$1" x="68.58" y="127" smashed="yes">
-<attribute name="NAME" x="68.58" y="133.35" size="1.778" layer="95"/>
-<attribute name="VALUE" x="68.58" y="121.92" size="1.778" layer="96"/>
-</instance>
+<instance part="U$1" gate="G$1" x="66.04" y="134.62" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -13282,7 +13320,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="80.01" y1="125.73" x2="80.01" y2="113.03" width="0.1524" layer="91"/>
 <junction x="80.01" y="113.03"/>
 <wire x1="63.5" y1="127" x2="63.5" y2="113.03" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="NEG"/>
+<pinref part="U$1" gate="G$1" pin="P-2"/>
 </segment>
 <segment>
 <pinref part="LD1" gate="G$1" pin="C"/>
@@ -13772,8 +13810,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="63.5" y1="142.24" x2="80.01" y2="142.24" width="0.1524" layer="91"/>
 <junction x="80.01" y="142.24"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="63.5" y1="129.54" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="POS"/>
+<wire x1="63.5" y1="132.08" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P-1"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="107.95" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
